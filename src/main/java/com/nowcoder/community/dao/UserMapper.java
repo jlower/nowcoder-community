@@ -5,17 +5,19 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface UserMapper {
-	User selectById(int id);
 
-	User selectByName(String username);
+    User selectById(int id);
 
-	User selectByEmail(String email);
+    User selectByName(String username);
 
-	int insertUser(User user);
+    User selectByEmail(String email);
 
-	int updateStatus(int id, int status);
+    int insertUser(User user);
 
-	int updateHeader(int id, String headerUrl);
+    int updateStatus(int id, int status);
 
-	int updatePassword(int id, String password);
+    int updateHeader(int id, String headerUrl);
+
+    int updatePassword(int id, String password);
+
 }
